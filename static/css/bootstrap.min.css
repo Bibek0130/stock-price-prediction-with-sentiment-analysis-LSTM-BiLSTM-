@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.body {
+    position: relative;
+    
+    
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    padding: 0;
+    color:white;
+}
+
+.index-container {
+    position: relative;
+    z-index: 2;
+    padding: 3rem;
+}
+.index-gif-div{
+    align-content: flex-start;
+}
+.crop-gif{
+    
+    width: max-content;
+    height:max-content;
+}
+#recommend-btn{
+    align-self: center;
+}
+/* image */
+.fertilizer_img{
+    width : 690px;
+    height: auto;
+
+}
+.describe-header{
+    padding-bottom: 20px;
+    color: floralwhite;
+}
+.description{
+    color: beige;
+}
+
+/* --------------------------------recommendation.html----------------------------- */
+/* form header */
+.form-header{
+    padding: 2rem 6rem 2rem;
+    text-align: center;
+  
+
+}
+.fertilizer-svg{
+    width:30px;
+    height:40px;
+}

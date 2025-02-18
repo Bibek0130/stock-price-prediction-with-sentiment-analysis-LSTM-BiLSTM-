@@ -1,0 +1,56 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <body background="{%static 'images/background_dark.png' %}">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <a class="navbar-brand" href="#">Stock Prediction</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                     <a class="nav-link" href="{%url 'predict'%}">Stock Predict</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{%url 'about'%}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+    <div class="container index-container">
+        <div class="row">
+            
+              
+            
+            <div class="col-sm col-6">
+              <h1 class="describe-header">Why use LSTM-BiLSTM for Stock Price Prediction with Sentiment Analysis?
+              </h1>
+              <p class="description">LSTM (Long Short-Term Memory) and BiLSTM (Bidirectional LSTM) are popular deep learning architectures 
+                for sequential data, making them ideal for stock price prediction. Stock prices depend on time-series data, and LSTMs 
+                effectively capture long-term dependencies. The BiLSTM variant enhances this by processing data in both forward and backward
+                 directions, giving it a more comprehensive understanding of past and future trends. By combining LSTM-BiLSTM with sentiment 
+                 analysis, which interprets market sentiment from news articles or social media, the model can account for both historical
+                  price data and emotional factors, improving prediction accuracy.
+              </p>
+                     <button type="button" class="btn btn-light btn-outline-dark" id="predict-btn">Predict</button>
+            </div>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('predict-btn').onclick = function(){
+            window.location.href = 'predict';
+        };
+    </script>
+</body>
+</html>
