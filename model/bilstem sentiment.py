@@ -1,14 +1,16 @@
+# scrape data from any news portasl
+
 import pandas as pd
 import numpy as np
 import re
 import nltk
 import tensorflow as tf
 #from keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.layers import Embedding, LSTM, Bidirectional, Dense, Dropout
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
+from preprocessing.text import Tokenizer  # ✅ Correct
+from tensorflow import pad_sequences
+from tensorflow import Embedding, LSTM, Bidirectional, Dense, Dropout
+from tensorflow import Sequential
+from tensorflow import Adam
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from nltk.corpus import stopwords

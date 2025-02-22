@@ -34,7 +34,7 @@ The data used for this project will be the stock news for nepse data.
 # od.download("https://www.kaggle.com/datasets/bibekmainali01/nepse-news-dataset-30k")
 
 import pandas as pd
-dataset = "/nepse_news_dataset_30k.csv"
+dataset = "E:/CAB files/7th sem/FYP/Stock Prediction with sentiment Analysis ((LSTM-BiLSTM)/stock_prediction/model/nepse_news_dataset_30k.csv"
 #dataset = "nepse_news_dataset_30k.csv"
 df = pd.read_csv(dataset)
 df.head()
@@ -175,13 +175,13 @@ print(sum)
   we use bilstm model when building
 """
 
-from tensorflow.keras.layers import LSTM, Activation, Dropout, Dense, Input, Embedding, Bidirectional
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
+from tensorflow import LSTM, Activation, Dropout, Dense, Input, Embedding, Bidirectional
+from tensorflow import Sequential
+from tensorflow import Adam
 
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Bidirectional, LSTM, Dropout, Dense, Input
-from tensorflow.keras.optimizers import Adam
+from tensorflow import Sequential
+from tensorflow import Bidirectional, LSTM, Dropout, Dense, Input
+from tensorflow import Adam
 
 # Define the model
 model = Sequential()

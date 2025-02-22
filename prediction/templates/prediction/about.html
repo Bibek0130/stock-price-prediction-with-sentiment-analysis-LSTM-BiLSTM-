@@ -1,10 +1,89 @@
-<html>
-    <head>
-        <title>
-            Stock Prediction with sentiment Analysis
-        </title>
-    </head>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 24px;
+        }
+
+        .step {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+            <a class="navbar-brand" href="{%url 'main'%}">Stock Prediction</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link" href="{%url 'predict'%}">Stock Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'about'%}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <h1> Stock Prediction using  LSTM and Sentiment  Analysis using BiLSTM </h1>
+
+        <div class="container">
+            <h2>How to Use the Stock Prediction Website</h2>
+    
+            <div class="step">
+                <strong>Step 1:</strong> Navigate to the <strong>Predict</strong> page using the menu or by clicking the <strong>Predict</strong> button on the main page.
+            </div>
+    
+            <div class="step">
+                <strong>Step 2:</strong> Select a stock from the dropdown menu and click the <strong>Predict</strong> button.
+            </div>
+            
+            <div class="step">
+                <strong>Step 3:</strong> The Chart for the predicted stock will appear. 
+            </div>
+    
+    
+            <div class="footer">
+                &copy; 2025 Stock Prediction | All rights reserved.
+            </div>
+        </div>
     </body>
 </html>
